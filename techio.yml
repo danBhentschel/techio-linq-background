@@ -19,10 +19,8 @@ plan:
     plan:
     - title: "Writing extension methods"
       statement: markdowns/03_ExtensionMethods/01_extension_intro.md
-    - title: "Exercise: Extension methods"
-      statement: markdowns/03_ExtensionMethods/02_extension_exercise.md
-    - title: "Passing extra parameters to an extension method"
-      statement: markdowns/03_ExtensionMethods/03_extension_parameters.md
+    - title: "Extension method parameters"
+      statement: markdowns/03_ExtensionMethods/02_extension_parameters.md
   - title: "Generators and IEnumerable<T>"
     description: "Creating and using generators in C#"
     plan:

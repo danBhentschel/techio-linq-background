@@ -9,18 +9,18 @@ namespace ExtensionMethods1
         [TestMethod]
         public void Exercise1()
         {
-            Utils.TechioMessage("About to test DoSayHello(\"World\")");
-            var answer = ExtensionMethodsExercise1.DoSayHello("World");
+            Utils.TechioMessage("\"World\".SayHello()");
+            var answer = "World".SayHello();
             Utils.AssertAreEqual("Hello, World!", answer, "World");
 
             Utils.TechioMessage(string.Empty);
-            Utils.TechioMessage("About to test DoSayHello(\"Dolly\")");
-            answer = ExtensionMethodsExercise1.DoSayHello("Dolly");
+            Utils.TechioMessage("\"Dolly\".SayHello()");
+            answer = "Dolly".SayHello();
             Utils.AssertAreEqual("Hello, Dolly!", answer, "Dolly");
 
             Utils.TechioMessage(string.Empty);
-            Utils.TechioMessage("About to test DoSayHello(\"Nurse\")");
-            answer = ExtensionMethodsExercise1.DoSayHello("Nurse");
+            Utils.TechioMessage("\"Nurse\".SayHello()");
+            answer = "Nurse".SayHello();
             Utils.AssertAreEqual("Hello, Nurse!", answer, "Nurse");
 
             Utils.TechioMessage(string.Empty);
