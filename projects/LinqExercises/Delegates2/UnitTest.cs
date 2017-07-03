@@ -1,32 +1,30 @@
-using System.Collections.Generic;
+using System.Linq;
 using LinqExercises.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+// ReSharper disable once CheckNamespace
 namespace Delegates2
 {
     [TestClass]
     public class UnitTest
     {
-        public static List<string> Answers;
-
         [TestMethod]
         public void Exercise2()
         {
-            Answers = null;
+            var inputs = new[] {"World", "Dolly", "there"};
+            var answers = inputs.Select(_ => DelegatesExercise2.HelloFunc(_)).ToList();
 
-            DelegatesExercise2.DoSayHello();
-
-            if (Answers == null)
+            if (answers == null)
             {
-                Utils.CgMessage("You need to call Exercise.TestSayHello()");
+                Utils.TechioMessage("You need to call Exercise.TestSayHello()");
             }
-            Assert.IsNotNull(Answers);
-            Utils.AssertAreEqual("Hello, World!", Answers[0], "World");
-            Utils.AssertAreEqual("Hello, Dolly!", Answers[1], "Dolly");
-            Utils.AssertAreEqual("Hello, there!", Answers[2], "there");
+            Assert.IsNotNull(answers);
+            Utils.AssertAreEqual("Hello, World!", answers[0], inputs[0]);
+            Utils.AssertAreEqual("Hello, Dolly!", answers[1], inputs[1]);
+            Utils.AssertAreEqual("Hello, there!", answers[2], inputs[2]);
 
-            Utils.CgMessage(string.Empty);
-            Utils.CgMessage("Congratulations, you did it!");
+            Utils.TechioMessage(string.Empty);
+            Utils.TechioMessage("Congratulations, you did it!");
         }
     }
 }

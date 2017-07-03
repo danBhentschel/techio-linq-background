@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Delegates2
+namespace Delegates3
 {
     public static class Exercise
     {

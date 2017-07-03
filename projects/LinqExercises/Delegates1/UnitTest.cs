@@ -20,9 +20,9 @@ namespace Delegates1
             Assert.AreEqual("Hello, my baby!", Answers[1]);
             Assert.AreEqual("Hello, my honey!", Answers[2]);
 
-            Answers.ForEach(Utils.CgMessage);
-            Utils.CgMessage(string.Empty);
-            Utils.CgMessage("Congratulations, you did it!");
+            Answers.ForEach(Utils.TechioMessage);
+            Utils.TechioMessage(string.Empty);
+            Utils.TechioMessage("Congratulations, you did it!");
         }
     }
 }
