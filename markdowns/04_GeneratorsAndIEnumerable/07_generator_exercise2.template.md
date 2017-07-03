@@ -1,12 +1,10 @@
-# Exercise: Bounded generator
+# Bounded generator exercise
 
 Exercise time again! Let's see if you can write a bounded generator. For reference, here is the code for the `GetFibonacciOfLength()` bounded generator:
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetFibonacciOfLength() generator method
 ```
-
-> Don't forget that you can also use `yield break` to end a generator.
 
 In this exercise, you will implement the same generator as in the unbounded generator exercise, but this time the sequence will be limited to the first `n` values, where `n` is a parameter to the method. As a reminder, here is the sequence you will be implementing:
 

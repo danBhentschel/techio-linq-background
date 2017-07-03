@@ -1,9 +1,10 @@
-# Background: Using generators
+[//]: # (GENERATED FILE -- DO NOT EDIT)
+# IEnumerable&lt;T&gt; - Using generators
 
 Let's continue using the unbounded `GetFibonacci()` generator method from the previous lesson. Take a look at this line of code:
 
 ```csharp
-//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Call GetFibonacci().Count()
+Console.WriteLine(GetFibonacci().Count());
 ```
 
 What will this print?
@@ -18,4 +19,4 @@ Why do you think this is?
 
 Eventually, the numbers produced by the `GetFibonacci()` method get large enough that they don't fit into an `int`. This is the cause of the `OverflowException`.
 
-> **NOTE:** The `Count()` method used above is a LINQ method. More on this later.
+> **NOTE:** The `Count()` method used above is a LINQ method. You can find more details in the **Using LINQ** course.

@@ -1,4 +1,4 @@
-# Background: Delegates as Parameters
+# Delegates - As parameters
 
 Still referring to the `FuncTwoInts` type, previously declared as:
 

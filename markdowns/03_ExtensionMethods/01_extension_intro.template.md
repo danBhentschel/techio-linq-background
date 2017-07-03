@@ -1,4 +1,4 @@
-# Background: Extension Methods
+# Extension Methods
 
 ## Why learn about extension methods?
 All LINQ methods are extension methods, defined in the `System.Linq` namespace.

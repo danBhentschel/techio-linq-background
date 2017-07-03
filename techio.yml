@@ -28,18 +28,16 @@ plan:
       statement: markdowns/04_GeneratorsAndIEnumerable/01_ienumerable_intro.md
     - title: "Unbounded generators"
       statement: markdowns/04_GeneratorsAndIEnumerable/02_ienumerable_generator.md
-    - title: "Exercise: Unbounded generator"
-      statement: markdowns/04_GeneratorsAndIEnumerable/03_generator_exercise1.md
     - title: "Using generators"
-      statement: markdowns/04_GeneratorsAndIEnumerable/04_using_generators1.md
+      statement: markdowns/04_GeneratorsAndIEnumerable/03_using_generators1.md
     - title: "More generator examples"
-      statement: markdowns/04_GeneratorsAndIEnumerable/05_using_generators2.md
+      statement: markdowns/04_GeneratorsAndIEnumerable/04_using_generators2.md
     - title: "Exiting a generator"
-      statement: markdowns/04_GeneratorsAndIEnumerable/06_bounded_generators1.md
+      statement: markdowns/04_GeneratorsAndIEnumerable/05_bounded_generators1.md
     - title: "Yield break"
-      statement: markdowns/04_GeneratorsAndIEnumerable/07_bounded_generators2.md
-    - title: "Exercise: Bounded generator"
-      statement: markdowns/04_GeneratorsAndIEnumerable/08_generator_exercise2.md
+      statement: markdowns/04_GeneratorsAndIEnumerable/06_bounded_generators2.md
+    - title: "Bounded generator exercise"
+      statement: markdowns/04_GeneratorsAndIEnumerable/07_generator_exercise2.md
   - title: "Putting it all together"
     description: "Applying the background information to LINQ"
     plan:

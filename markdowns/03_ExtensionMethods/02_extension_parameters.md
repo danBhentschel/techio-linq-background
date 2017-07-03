@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Background: Extension method parameters
+# Extension Methods - Extra parameters
 
 An extension method can take extra parameters, in addition to an instance of the type that it is extending. Here is an example of how this works:
 

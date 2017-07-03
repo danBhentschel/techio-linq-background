@@ -1,10 +1,10 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Background: IEnumerable&lt;T&gt;
+# IEnumerable&lt;T&gt;
 
-### Why learn about generators and IEnumerable&lt;T&gt;?
+## Why learn about generators and IEnumerable&lt;T&gt;?
 LINQ methods are extension methods to the `IEnumerable<T>` interface. It is important to understand how `IEnumerable<T>` works to fully understand the more subtle details of how LINQ works.
 
-### Collections as IEnumerable&lt;T&gt;
+## Collections as IEnumerable&lt;T&gt;
 A method returning an object that implements the `IEnumerable<T>` interface can be enumerated via a `foreach` block. For example:
 
 ```csharp

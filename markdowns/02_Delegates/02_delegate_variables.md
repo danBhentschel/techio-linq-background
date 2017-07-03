@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Background: Delegate Variables
+# Delegates - Delegate variables
 
 Referring to the `FuncTwoInts` type, previously declared as:
 
