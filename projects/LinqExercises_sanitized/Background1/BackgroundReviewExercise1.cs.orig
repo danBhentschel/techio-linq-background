@@ -13,18 +13,11 @@ namespace Background1
     public delegate int TransformationFunction(int val);
     //// END SOLUTION ////
 
-    public static class BackgroundReviewExercise1
-    {
-        public static IEnumerable<int> DoTransform(IEnumerable<int> data, TransformationFunction func)
-        {
-            return data.Transform(func);
-        }
-    }
-
     // Write the extension method (and containing class) here,
     // following the examples in the lessons. The method should
-    // be called Transform(), extends IEnumerable<int>, and
-    // returns an IEnumerable<int>.
+    // be called Transform(), extend IEnumerable<int>, take an
+    // extra parameter of type TransformationFunction, and
+    // return an IEnumerable<int>.
 
     // public ... class ...
     // { }
