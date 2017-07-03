@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# IEnumerable&let;T&gt; - Yield break
+# IEnumerable&lt;T&gt; - Yield break
 
 Suppose we want to have a generator that provides a bounded sequence, but it's non-trivial to calculate exactly how many values will be in the sequence. There is a way to do this as well.
 
