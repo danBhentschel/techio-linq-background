@@ -15,4 +15,4 @@ What does this do? Let's call it a few times and find out:
 # Exercise
 Try adding another extension method to the `string` type. This time, call it `MakePlural()`. The `MakePlural()` method should take an `int` parameter and return a string that is either the original string if the parameter is 1, or the string with an 's' appended to it if the parameter is not equal to 1.
 
-@[Extension Methods Exercise]({"stubs": ["ExtensionMethods2/ExtensionMethodsExercise2.cs"], "command": "ExtensionMethods2.UnitTest.Exercise2", "project": "exercises"})
+@[Extension Method Parameters Exercise]({"stubs": ["ExtensionMethods2/ExtensionMethodsExercise2.cs"], "command": "ExtensionMethods2.UnitTest.Exercise2", "project": "exercises"})

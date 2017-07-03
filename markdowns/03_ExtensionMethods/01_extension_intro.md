@@ -29,7 +29,7 @@ The name of the class isn't important, nor is the name of the method. The import
  - The first parameter to the method must be of the type that is being extended (`int` in this example)
  - The first parameter to the method must be prefaced with the keyword `this`
 
-### Calling an extension method
+## Calling an extension method
 
 The above extension method can be called as if it were a member of the `int` type. For example:
 
