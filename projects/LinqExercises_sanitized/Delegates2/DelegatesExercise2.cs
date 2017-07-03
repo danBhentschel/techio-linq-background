@@ -4,17 +4,17 @@ namespace Delegates2
 
     public static class DelegatesExercise2
     {
-        public static void DoSayHello()
-        {
-            // Uncomment the call to TestSayHello()
-            //
-            // The method Exercise.TestSayHello() takes a
-            // SayHello delegate as input. Pass it a delegate
-            // method that, when given a string "foo", will
-            // return the string "Hello, foo!".
+        // Uncomment the declaration of HelloFunc
+        //
+        // Utilizing one of the techniques for defining a
+        // delegate function, define HelloFunc such that
+        // when given a string "foo" as a parameter, it
+        // will return the string "Hello, foo!".
+        //
+        // Try to solve this exercise utilizing different
+        // techiniques for defining a delegate, as shown
+        // in the lesson.
 
-            // Exercise.TestSayHello(<something>);
-
-        }
+        // public static readonly SayHello HelloFunc = ???
     }
 }

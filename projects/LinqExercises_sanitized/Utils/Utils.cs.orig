@@ -5,7 +5,7 @@ namespace LinqExercises.Utils
 {
     public static class Utils
     {
-        public static void CgMessage(string message)
+        public static void TechioMessage(string message)
         {
             Console.WriteLine($"TECHIO> message -channel \"exercise results\" \"{message}\"");
         }
@@ -18,7 +18,7 @@ namespace LinqExercises.Utils
             }
 
             Assert.AreEqual(expected, actual);
-            CgMessage($"IN: <{provided}> OUT: <{actual}>");
+            TechioMessage($"IN: <{provided}> OUT: <{actual}>");
         }
 
         private static void PrintDifference(string expected, string actual)
@@ -26,8 +26,8 @@ namespace LinqExercises.Utils
             int offset = GetDiffOffest(expected, actual);
             var errCaret = new string(' ', offset) + '^' +
                            new string(' ', expected.Length - offset - 1);
-            CgMessage($"EXPECTED: <{expected}>  GOT: <{actual}>");
-            CgMessage($"           {errCaret}         {errCaret}");
+            TechioMessage($"EXPECTED: <{expected}>  GOT: <{actual}>");
+            TechioMessage($"           {errCaret}         {errCaret}");
         }
 
         private static int GetDiffOffest(string expected, string actual)
