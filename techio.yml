@@ -32,10 +32,8 @@ plan:
       statement: markdowns/04_GeneratorsAndIEnumerable/03_using_generators1.md
     - title: "Exiting a generator"
       statement: markdowns/04_GeneratorsAndIEnumerable/04_bounded_generators1.md
-    - title: "Yield break"
-      statement: markdowns/04_GeneratorsAndIEnumerable/05_bounded_generators2.md
     - title: "Bounded generator exercise"
-      statement: markdowns/04_GeneratorsAndIEnumerable/06_generator_exercise2.md
+      statement: markdowns/04_GeneratorsAndIEnumerable/05_generator_exercise2.md
   - title: "Putting it all together"
     description: "Applying the background information to LINQ"
     plan:
