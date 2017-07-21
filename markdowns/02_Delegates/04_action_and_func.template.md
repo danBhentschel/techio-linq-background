@@ -31,7 +31,7 @@ Here is an example using `Action` to declare a delegate variable:
 //// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Example Action usage
 ```
 
-But what if you want to pass some parameters to your delegate? That's covered as well. There's an [`Action<T>`](https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx) that takes one parameter, or [`Action<T1, T2>`](https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx) takes two parameters, and so on all the way up to an `Action` that takes 16 parameters.
+What if you want to pass some parameters to your delegate? That's covered as well. There's an [`Action<T>`](https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx) that takes one parameter, or [`Action<T1, T2>`](https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx) takes two parameters, and so on all the way up to an `Action` that takes 16 parameters.
 
 Here's an example of a delegate that takes three parameters of different types:
 
