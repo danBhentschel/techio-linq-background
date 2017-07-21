@@ -1,7 +1,6 @@
 # Extra credit - Action and Func
 > **Feeling a bit overwhelmed?** The content on this page is optional. It can make your life easier, but it requires a bit more knowledge to understand than the other content in this course. Feel free to skip to the next lesson if you want to.
 
-## Action type
 Writing a delegate type for each delegate that you want to declare gets a bit repetitive. For example, suppose you were to write this `SayHello` delegate:
 
 ```csharp
@@ -23,6 +22,7 @@ Then what do you do when you need to declare another delegate type that also tak
 
 See where this is headed?
 
+## Action type
 There is a family of built-in delegate type declarations that can be used to define commonly-used delegates without the need to declare a custom type. The types that define a delegate without a return value (`void` return) are the [`Action`](https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx) types in the [`System`](https://msdn.microsoft.com/en-us/library/system(v=vs.110).aspx#Anchor_3) namespace.
 
 Here is an example using `Action` to declare a delegate variable:
