@@ -86,6 +86,13 @@ namespace LinqCourseEmbeddedCode
         private SayGoodbye goodbyeFunction = () => Console.WriteLine("Goodbye!");
         //// END EMBED ////
 
+        //// START EMBED: SayAnything declaration ////
+        private delegate void SayAnything();
+
+        private SayAnything helloFunction2 = () => Console.WriteLine("Hello!");
+        private SayAnything goodbyeFunction2 = () => Console.WriteLine("Goodbye!");
+        //// END EMBED ////
+
         //// START EMBED: Example Action usage ////
         private Action supFunction = () => Console.WriteLine("Sup?!");
         //// END EMBED ////

@@ -14,9 +14,12 @@ You could instead declare a new delegate type:
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, SayGoodbye declaration
 ```
-But notice that `SayGoodbye` is, other than its name, exactly the same as `SayHello`. Maybe it would be better to rename `SayHello` to something more generic like `SayAnything`...
+Notice that `SayGoodbye` is, other than its name, exactly the same as `SayHello`. Maybe it would be better to rename `SayHello` to something more generic like `SayAnything`...
 
-But then what do you do when you need to declare another delegate type that takes no parameters and returns `void`? Maybe that declaration should be called `DoAnything`! But then you'd need to declare that type for every project that you work on...
+```csharp
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, SayAnything declaration
+```
+Then what do you do when you need to declare another delegate type that also takes no parameters and returns `void`? Maybe that declaration should be called `DoAnything`! But then you'd need to declare that type for every project that you work on...
 
 See where this is headed?
 
