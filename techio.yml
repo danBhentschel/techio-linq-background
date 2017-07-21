@@ -39,7 +39,14 @@ plan:
     plan:
     - title: "Exercise: Implement a LINQ method"
       statement: markdowns/05_PuttingItAllTogether/01_background_mashup.md
+  - title: "Final Words"
+    description: "A review of the course and some suggestions on further learning materials"
+    plan:
+    - title: "Review"
+      statement: markdowns/06_FinalWords/01_review.md
+    - title: "What next"
+      statement: markdowns/06_FinalWords/02_what_next.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
-      runner: "danbhentschel/cg-dotnet-runner:1.12"
+      runner: "danbhentschel/cg-dotnet-runner:1.13"
