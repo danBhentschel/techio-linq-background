@@ -73,5 +73,38 @@ namespace LinqCourseEmbeddedCode
             PrintWith_2and4((foo, bar) => 9999);
         }
         //// END EMBED ////
+
+        //// START EMBED: SayHello declaration ////
+        private delegate void SayHello();
+
+        private SayHello helloFunction = () => Console.WriteLine("Hello!");
+        //// END EMBED ////
+
+        //// START EMBED: SayGoodbye declaration ////
+        private delegate void SayGoodbye();
+
+        private SayGoodbye goodbyeFunction = () => Console.WriteLine("Goodbye!");
+        //// END EMBED ////
+
+        //// START EMBED: Example Action usage ////
+        private Action supFunction = () => Console.WriteLine("Sup?!");
+        //// END EMBED ////
+
+        //// START EMBED: Example Action usage 2 ////
+        private Action<string, int, bool> printThreeValues =
+            (s, i, b) => Console.WriteLine($"string: {s}, int: {i}, bool: {b}");
+        //// END EMBED ////
+
+        //// START EMBED: Example Func usage ////
+        private Func<int> twoPlusThree = () => 2 + 3;
+        //// END EMBED ////
+
+
+        //// START EMBED: Example Func usage 2 ////
+        private Func<string, string, int> sumCharacters = 
+            (s1, s2) => s1.Length + s2.Length;
+        //// END EMBED ////
+
+
     }
 }

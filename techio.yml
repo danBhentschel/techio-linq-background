@@ -14,6 +14,8 @@ plan:
       statement: markdowns/02_Delegates/02_delegate_variables.md
     - title: "Delegates as Parameters"
       statement: markdowns/02_Delegates/03_delegate_parameters.md
+    - title: "Action<> and Func<>"
+      statement: markdowns/02_Delegates/04_action_and_func.md
   - title: "Extension methods"
     description: "Using extension methods in C#"
     plan:
