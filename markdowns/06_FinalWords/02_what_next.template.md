@@ -19,7 +19,7 @@ The C# Programming guide has a nice, short article on [extension methods](https:
 The [C# Programming Paradigms](https://app.pluralsight.com/library/courses/csharp-fundamentals-2/table-of-contents) Pluralsight course, by Scott Allen, gives some good information about delegates and extension methods in the first chapter, entitled _C# and LINQ_.
 
 ### Iterators (Microsoft C# Programming Guide)
-There is also a small section on [iterators](https://msdn.microsoft.com/en-us/library/dscyy5s0.aspx) in the C# Programming Guide.
+There is also a small section on [iterators](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators) in the C# Programming Guide.
 
 ### Iterator Pattern and Sequences (Pluralsight)
 The [Tactical Design Patterns in .NET: Control Flow](https://app.pluralsight.com/library/courses/tactical-design-patterns-dot-net-control-flow/table-of-contents) course on Pluralsight, by Zoran Horvat, has a section on the _Iterator Pattern and Sequences_ that gives more information about sequences, and shows an example of how to build a class that implements `IEnumerable<T>`.
