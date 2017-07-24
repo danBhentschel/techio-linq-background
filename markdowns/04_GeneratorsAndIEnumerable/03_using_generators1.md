@@ -19,7 +19,7 @@ Why do you think this is?
 
 Eventually, the numbers produced by the `GetFibonacci()` method get large enough that they don't fit into an `int`. This is the cause of the `OverflowException`.
 
-> **NOTE:** The `Count()` method used above is a LINQ method. You can find more details in the **Using LINQ** course.
+> **NOTE:** The `Count()` method used above is a LINQ method. You can find more details in the **[Using C# LINQ](https://tech.io/playgrounds/213)** course.
 
 ## Iterating an unbounded generator
 Here is another example using the `GetFibonacci()` method:
