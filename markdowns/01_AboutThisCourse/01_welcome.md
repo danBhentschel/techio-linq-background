@@ -21,7 +21,7 @@ The lessons provided here are geared toward the experienced coder who is looking
 Advanced
 
 ## Estimated Time
-TBD
+About 1 hour
 
 ## Current Course Version
 0.0.1
