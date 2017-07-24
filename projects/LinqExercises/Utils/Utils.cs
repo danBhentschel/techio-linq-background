@@ -7,7 +7,7 @@ namespace LinqExercises.Utils
     {
         public static void TechioMessage(string message)
         {
-            Console.WriteLine($"TECHIO> message -channel \"exercise results\" \"{message}\"");
+            Console.WriteLine($"TECHIO> message -channel \"exercise results\" '{message}'");
         }
 
         public static void AssertAreEqual(string expected, string actual, string provided)
