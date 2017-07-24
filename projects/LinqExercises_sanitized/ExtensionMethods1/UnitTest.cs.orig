@@ -9,17 +9,17 @@ namespace ExtensionMethods1
         [TestMethod]
         public void Exercise1()
         {
-            Utils.TechioMessage("\\\"World\\\".SayHello()");
+            Utils.TechioMessage("'\"World\".SayHello()'");
             var answer = "World".SayHello();
             Utils.AssertAreEqual("Hello, World!", answer, "World");
 
             Utils.TechioMessage(string.Empty);
-            Utils.TechioMessage("\\\"Dolly\\\".SayHello()");
+            Utils.TechioMessage("'\"Dolly\".SayHello()'");
             answer = "Dolly".SayHello();
             Utils.AssertAreEqual("Hello, Dolly!", answer, "Dolly");
 
             Utils.TechioMessage(string.Empty);
-            Utils.TechioMessage("\\\"Nurse\\\".SayHello()");
+            Utils.TechioMessage("'\"Nurse\".SayHello()'");
             answer = "Nurse".SayHello();
             Utils.AssertAreEqual("Hello, Nurse!", answer, "Nurse");
 
