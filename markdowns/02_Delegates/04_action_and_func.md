@@ -31,7 +31,7 @@ Then what do you do when you need to declare another delegate type that also tak
 See where this is headed?
 
 ## Action type
-There is a family of built-in delegate type declarations that can be used to define commonly-used delegates without the need to declare a custom type. The types that define a delegate without a return value (`void` return) are the [`Action`](https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx) types in the [`System`](https://msdn.microsoft.com/en-us/library/system(v=vs.110).aspx#Anchor_3) namespace.
+There is a family of built-in delegate types that can be used to declare delegate variables without the need to define a custom type. The types that represent a delegate without a return value (`void` return) are the [`Action`](https://msdn.microsoft.com/en-us/library/system.action(v=vs.110).aspx) types in the [`System`](https://msdn.microsoft.com/en-us/library/system(v=vs.110).aspx#Anchor_3) namespace.
 
 Here is an example using `Action` to declare a delegate variable:
 
@@ -39,7 +39,7 @@ Here is an example using `Action` to declare a delegate variable:
 private Action supFunction = () => Console.WriteLine("Sup?!");
 ```
 
-What if you want to pass some parameters to your delegate? That's covered as well. There's an [`Action<T>`](https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx) that takes one parameter, or [`Action<T1, T2>`](https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx) takes two parameters, and so on all the way up to an `Action` that takes 16 parameters.
+What if you want to pass some parameters to your delegate? That's covered as well. There's an [`Action<T>`](https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx) that takes one parameter, or [`Action<T1, T2>`](https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx) that takes two parameters, and so on all the way up to an `Action` that takes 16 parameters.
 
 Here's an example of a delegate that takes three parameters of different types:
 
@@ -57,7 +57,7 @@ private Func<int> twoPlusThree = () => 2 + 3;
 
 What about passing parameters? Then you need [`Func<T, TResult>`](https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx) for delegates that take one parameter, and [`Func<T1, T2, TResult>`](https://msdn.microsoft.com/en-us/library/bb534647(v=vs.110).aspx) for two parameters, etc. Just as with `Action`, the framework has delegates that support all the way up to 16 parameters.
 
-Here is an example of a delegate declaration that takes two parameters:
+Here is an example of a delegate declaration that takes two `string` parameters and returns an `int`:
 
 ```csharp
 private Func<string, string, int> sumCharacters = 
