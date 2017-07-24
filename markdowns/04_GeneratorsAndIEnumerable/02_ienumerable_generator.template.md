@@ -2,7 +2,7 @@
 
 
 ## The Fibonacci generator
-In the previous lesson, we looked at an `IEnumerable<int>` backed by a `List<int>`. An `IEnumerable<T>` could also be backed by a stateful method, rather than a static collection. This method is called a generator, and it looks like this:
+In the previous lesson, we looked at an `IEnumerable<int>` backed by a `List<int>`. An `IEnumerable<T>` could also be backed by a stateful method, rather than a static collection. This method is called a [generator](https://en.wikipedia.org/wiki/Generator_%28computer_programming%29), and it looks like this:
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetFibonacci() generator method

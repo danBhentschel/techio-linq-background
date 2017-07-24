@@ -16,4 +16,6 @@ Since `List<T>` implements `IEnumerable<T>`, you can iterate the return value fr
 //// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Call method returning IEnumerable
 ```
 
+> **NOTE:** `IEnumerable<T>` is an implementation of the [Iterator Pattern](https://en.wikipedia.org/wiki/Iterator_pattern) in C#.
+
 Not all that surprising or impressive, is it? Well, let's take a look at generators next. That's where the true value of `IEnumerable<T>` lies.
