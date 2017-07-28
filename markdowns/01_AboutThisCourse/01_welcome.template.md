@@ -22,8 +22,14 @@ Advanced
 ## Estimated Time
 About 1 hour
 
+## GitHub Repository
+This course is stored in a GitHub repository. You can not only see how the course was created, but there are solutions to all the exercises in there as well.
+
+[techio-linq-background](https://github.com/danBhentschel/techio-linq-background)
+
 ## Current Course Version
-0.0.1
+1.1
 
 ## Course Revision History
-None
+2017-07-28 - Add link to GitHub<br />
+2017-07-27 - Published

@@ -1,9 +1,22 @@
-# cg-linq-for-beginners
-A lesson on C# LINQ, for CodinGame Learning platform
+# techio-linq-background
+A lesson on C# LINQ, for the tech.io learning platform. It is hosted at [C# LINQ Background Topics](https://tech.io/playgrounds/345).
 
-A description of the course can be found in the `about.md` file.
+## Exercise solutions
 
-# pre-commit and post-commit
+Links to solutions:
+
+ * **Delegates Exercise** - [projects/LinqExercises/Delegates1/DelegatesExercise1.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Delegates1/DelegatesExercise1.cs)
+ * **Delegate Variable Exercise** - [projects/LinqExercises/Delegates2/DelegatesExercise2.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Delegates2/DelegatesExercise2.cs)
+ * **Delegate Parameters Exercise** - [projects/LinqExercises/Delegates3/DelegatesExercise3.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Delegates3/DelegatesExercise3.cs)
+ * **Extension Methods Exercise** - [projects/LinqExercises/ExtensionMethods1/ExtensionMethodsExercise1.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/ExtensionMethods1/ExtensionMethodsExercise1.cs)
+ * **Extension Method Parameters Exercise** - [projects/LinqExercises/ExtensionMethods2/ExtensionMethodsExercise2.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/ExtensionMethods2/ExtensionMethodsExercise2.cs)
+ * **Unbounded Generator Exercise** - [projects/LinqExercises/Generators1/GeneratorsExercise1.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Generators1/GeneratorsExercise1.cs)
+ * **Bounded Generator Exercise** - [projects/LinqExercises/Generators2/GeneratorsExercise2.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Generators2/GeneratorsExercise2.cs)
+ * **Putting It Together Exercise** - [projects/LinqExercises/Background1/BackgroundReviewExercise1.cs](https://github.com/danBhentschel/techio-linq-background/blob/master/projects/LinqExercises/Background1/BackgroundReviewExercise1.cs)
+
+
+# Details on git hooks
+## pre-commit and post-commit
 To enable:
 
 ```bash
@@ -12,15 +25,15 @@ ln -s ../../pre-commit
 ln -s ../../post-commit
 ```
 
-## embed_examples.pl
+### embed_examples.pl
 This script is run from `pre-commit`. It parses template files and inserts code into them before committing to Git.
 
-### Problems
+#### Problems
  - Some code examples are repeated in more than one place in a course. I sometimes forget to edit all places the example exists.
  - When modifying code examples, I will sometimes inadvertently write code that doesn't compile.
  - I want to be able to unit test my code examples so I know for sure that they actually do what I say they do.
 
-### Solution
+#### Solution
 The `embed_examples.pl` script parses the `techio.yml` file and gets a list of all markdown files in the course. It then looks for
 a `.template.md` file associated with each one. If the template file exists, it parses the file looking for lines that match the
 following pattern:
@@ -46,7 +59,7 @@ The `START EMBED` and `END EMBED` lines start and end the section of code define
 bracket an area in which all instances of `pattern` will be replaced with `replacement`. The `START ELLIDE` and `END ELIDE` lines
 bracket an area within an embedded code section that will be ommitted, and replaced with ellipses (...).
 
-### Example
+#### Example
 
 In the markdown template:
 ```
@@ -81,16 +94,16 @@ echo -n foo
 echo bar
 ```
 
-## remove_md_files.pl
+### remove_md_files.pl
 This script is run from `post-commit`. It removes generated markdown files after committing to Git.
 
-### Problem
+#### Problem
 I frequently found myself editing the generated files by accident, rather than the template files.
 
-### Solution
+#### Solution
 Remove generated files after they have been committed.
 
-## sanitize_projects.pl
+### sanitize_projects.pl
 This script is run from `pre-commit`. It parses project files and removes solution code from them before committing to Git.
 
 ### Problems
@@ -102,7 +115,7 @@ This script is run from `pre-commit`. It parses project files and removes soluti
  
 All this requires that the stub code presented to the student must be different from the code run in the development environment, and also different from the code run by the runner.
 
-### Solution
+#### Solution
 The `sanitize_projects.pl` script parses the `techio.yml` file and gets a list of all projects in the course. It then copies all the files into a new directory: `<project_dir>_sanitized`. The files are content filtered during the copy process, as described below.
 
 Any content found between the following lines will be removed during copy:
