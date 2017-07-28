@@ -24,7 +24,7 @@ Advanced
 About 1 hour
 
 ## GitHub Repository
-This course is stored in a GitHub repository. You can not only see how the course was created, but there are solutions to all the exercises in there as well.
+This course is stored in a GitHub repository. You can not only see how the course was created, but there are solutions to all the exercises in there as well. Also, if you have any recommendations for improvement, feel free to fork the repository and create a pull request!
 
 [techio-linq-background](https://github.com/danBhentschel/techio-linq-background)
 
